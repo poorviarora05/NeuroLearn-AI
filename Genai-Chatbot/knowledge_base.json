@@ -1,0 +1,61 @@
+[
+  {
+    "topic": "artificial intelligence",
+    "keywords": ["ai", "artificial intelligence"],
+    "answer": "Artificial Intelligence (AI) is a technology that enables machines to simulate human intelligence. AI systems can learn, reason, solve problems, understand language, and make decisions. Examples include chatbots, recommendation systems, self-driving cars, and virtual assistants."
+  },
+
+  {
+    "topic": "machine learning",
+    "keywords": ["machine learning", "ml"],
+    "answer": "Machine Learning is a branch of Artificial Intelligence that allows systems to learn from data and improve automatically without explicit programming. It is widely used in recommendation systems, fraud detection, image recognition, and predictive analytics."
+  },
+
+  {
+    "topic": "supervised learning",
+    "keywords": ["supervised learning", "classification", "regression"],
+    "answer": "Supervised Learning is a Machine Learning approach where the model learns from labeled data. The input and correct output are already known during training. Common tasks include classification and regression."
+  },
+
+  {
+    "topic": "unsupervised learning",
+    "keywords": ["unsupervised learning", "clustering", "unlabeled data"],
+    "answer": "Unsupervised Learning is a Machine Learning approach where the system learns patterns from unlabeled data. It is commonly used for clustering and pattern discovery."
+  },
+
+  {
+    "topic": "deep learning",
+    "keywords": ["deep learning", "neural network"],
+    "answer": "Deep Learning is a subset of Machine Learning based on neural networks with multiple layers. It is used in image recognition, NLP, speech recognition, and Generative AI systems."
+  },
+
+  {
+    "topic": "llm",
+    "keywords": ["llm", "large language model"],
+    "answer": "LLM stands for Large Language Model. These models are trained on massive text datasets to understand and generate human-like language. Examples include GPT, Gemini, Claude, and LLaMA."
+  },
+
+  {
+    "topic": "generative ai",
+    "keywords": ["generative ai", "gen ai"],
+    "answer": "Generative AI is a type of AI that creates new content such as text, images, code, music, and videos using deep learning models."
+  },
+
+  {
+    "topic": "nlp",
+    "keywords": ["nlp", "natural language processing"],
+    "answer": "Natural Language Processing (NLP) enables computers to understand, process, and generate human language. Applications include chatbots, translation systems, and sentiment analysis."
+  },
+
+  {
+    "topic": "prompt engineering",
+    "keywords": ["prompt engineering", "prompt"],
+    "answer": "Prompt Engineering is the process of designing effective instructions for AI systems to generate accurate and useful responses."
+  },
+
+  {
+    "topic": "transformers",
+    "keywords": ["transformer", "transformers"],
+    "answer": "Transformers are deep learning architectures used in modern LLMs. They use attention mechanisms to understand relationships between words in a sequence."
+  }
+]

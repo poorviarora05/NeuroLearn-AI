@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background: #e5e5ea;
+}
+
+.iphone-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    width: 390px;
+    height: 720px;
+    background: #f9f9f9;
+    border-radius: 38px;
+    overflow: hidden;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    border: 8px solid #111;
+}
+
+.phone-header {
+    height: 86px;
+    background: rgba(248,248,248,0.95);
+    border-bottom: 1px solid #d1d1d6;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #007aff, #5856d6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.phone-header h2 {
+    margin: 0;
+    font-size: 17px;
+    color: #111;
+}
+
+.phone-header p {
+    margin: 3px 0 0;
+    font-size: 12px;
+    color: #34c759;
+}
+
+#chat-box {
+    flex: 1;
+    padding: 14px;
+    overflow-y: auto;
+    background: #fff;
+}
+
+.bot-message,
+.user-message {
+    max-width: 78%;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    animation: pop 0.2s ease;
+}
+
+.bot-message {
+    background: #e5e5ea;
+    color: #111;
+    border-bottom-left-radius: 5px;
+}
+
+.user-message {
+    background: #007aff;
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 5px;
+}
+
+.quick-buttons {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.quick-buttons button {
+    border: none;
+    background: #f2f2f7;
+    color: #007aff;
+    padding: 8px 13px;
+    border-radius: 999px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.input-area {
+    padding: 10px;
+    background: #f9f9f9;
+    display: flex;
+    gap: 8px;
+    border-top: 1px solid #d1d1d6;
+}
+
+.input-area input {
+    flex: 1;
+    border: 1px solid #d1d1d6;
+    border-radius: 999px;
+    padding: 11px 15px;
+    font-size: 15px;
+    outline: none;
+    background: white;
+}
+
+.input-area button {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    background: #007aff;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.typing {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.bot-message p,
+.user-message p {
+    margin: 4px 0;
+}
+
+.bot-message ul,
+.user-message ul {
+    padding-left: 18px;
+}
+
+@keyframes pop {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+.header-text {
+    flex: 1;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.header-buttons button {
+    border: none;
+    background: #f2f2f7;
+    color: #007aff;
+    padding: 7px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.header-buttons button:hover {
+    background: #e5e5ea;
+}
+.timestamp {
+    font-size: 10px;
+    opacity: 0.7;
+    margin-top: 4px;
+    text-align: right;
+}
+.welcome-screen {
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.96);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    z-index: 10;
+    animation: fadeIn 0.5s ease;
+}
+
+.welcome-screen h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.welcome-screen p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 280px;
+}
+
+.welcome-screen {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,0.96),
+            rgba(245,245,247,0.98)
+        );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 20;
+
+    backdrop-filter: blur(10px);
+
+}
+
+.welcome-content {
+
+    text-align: center;
+
+    max-width: 300px;
+
+    animation: fadeIn 0.5s ease;
+
+}
+
+.welcome-logo {
+
+    width: 78px;
+
+    height: 78px;
+
+    margin: auto;
+
+    border-radius: 24px;
+
+    background: linear-gradient(135deg, #007aff, #5856d6);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 32px;
+
+    margin-bottom: 22px;
+
+    box-shadow: 0 15px 40px rgba(0,122,255,0.25);
+
+}
+
+.welcome-content h1 {
+
+    margin: 0;
+
+    font-size: 34px;
+
+    color: #111;
+
+    letter-spacing: -1px;
+
+}
+
+.welcome-content p {
+
+    margin-top: 14px;
+
+    color: #555;
+
+    line-height: 1.6;
+
+    font-size: 15px;
+
+}
+
+.welcome-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-top: 20px;
+
+}
+
+.welcome-tags span {
+
+    background: #f2f2f7;
+
+    color: #007aff;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+
+}
+
+.welcome-content button {
+
+    margin-top: 28px;
+
+    width: 100%;
+
+    border: none;
+
+    background: #007aff;
+
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 16px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+}
+
+.welcome-content button:hover {
+
+    opacity: 0.92;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.upload-area {
+    display: flex;
+    gap: 8px;
+    padding: 8px 10px;
+    background: #f9f9f9;
+    border-top: 1px solid #d1d1d6;
+}
+
+.upload-btn {
+    background: #f2f2f7;
+    color: #007aff;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid #d1d1d6;
+}
+
+.upload-btn:hover {
+    background: #e5e5ea;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NeuroLearn AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+
+<div class="iphone-wrapper">
+
+    <div class="phone">
+
+         <div class="phone-header">
+
+    <div class="avatar">AI</div>
+
+    <div class="header-text">
+        <h2>NeuroLearn AI</h2>
+        <p>Online • AI/ML Assistant</p>
+    </div>
+
+    <div class="header-buttons">
+        <button onclick="showHistory()">History</button>
+        <button onclick="clearChat()">Clear</button>
+    </div>
+
+</div>
+
+        <div id="chat-box">
+            <div class="welcome-screen" id="welcome-screen">
+
+    <div class="welcome-content">
+
+        <div class="welcome-logo">
+            ✦
+        </div>
+
+        <h1>NeuroLearn AI</h1>
+
+        <p>
+            Learn Artificial Intelligence, Machine Learning,
+            LLMs and Generative AI through interactive conversations.
+        </p>
+
+        <div class="welcome-tags">
+
+            <span>AI</span>
+
+            <span>Machine Learning</span>
+
+            <span>LLMs</span>
+
+            <span>Generative AI</span>
+
+        </div>
+
+        <button onclick="startChat()">Continue</button>
+
+    </div>
+
+</div>
+            <div class="bot-message">
+                <strong>Hey 👋</strong><br>
+                I’m NeuroLearn AI. Ask me anything about AI, ML, LLMs or Generative AI.
+            </div>
+
+            <div class="quick-buttons">
+                <button onclick="quickAsk('What is AI?')">AI</button>
+                <button onclick="quickAsk('What is Machine Learning?')">ML</button>
+                <button onclick="quickAsk('What are LLMs?')">LLMs</button>
+                <button onclick="quickAsk('What is Generative AI?')">GenAI</button>
+            </div>
+        </div>
+
+        <div class="upload-area">
+
+    <label class="upload-btn">
+        📄 PDF
+        <input type="file" id="pdf-upload" accept=".pdf" onchange="uploadPDF()" hidden>
+    </label>
+
+    <label class="upload-btn">
+        🖼️ Image
+        <input type="file" id="image-upload" accept="image/*" onchange="uploadImage()" hidden>
+    </label>
+
+</div>
+
+<div class="input-area">
+    <input type="text" id="user-input" placeholder="iMessage...">
+    <button onclick="startVoice()">🎤</button>
+    <button onclick="sendMessage()">↑</button>
+</div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
